@@ -1,0 +1,5 @@
+# Simile ~ Scheme in ML
+
+> Yo dawg, I heard you like lambda calculus so I put some lambda
+> calculus in your lambda calculus so you can recurse while you
+> recurse.
