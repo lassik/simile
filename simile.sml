@@ -162,9 +162,13 @@ fun demo () =
     let val (initCte, initRte) = getInitialEnvironments ()
         val program =
             compile ((SList [(SList [(SSymbol "lambda"),
-                                     (SList [SSymbol "x"]),
-                                     (SSymbol "x")]),
-                             (SString "coloring between the lines")]),
+                                     (SList [(SSymbol "a"),
+                                             (SSymbol "b")]),
+                                     (SList [(SSymbol "string-append"),
+                                             (SSymbol "a"),
+                                             (SSymbol "b")])]),
+                             (SString "This is easier than"),
+                             (SString " coloring between the lines!")]),
                      initCte)
     in
         printValue (program initRte)
